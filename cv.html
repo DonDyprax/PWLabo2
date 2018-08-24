@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <h1 align="center">Curriculum Vitae</h1>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <label for="dui">DUI</label>
+            <input type="text" name="dui" placeholder="">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" placeholder="John">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" placeholder="Doe">
+            <label for="gender">Gender</label>
+            <label><input type="radio" name="gender" value="M"> M </label>
+            <label><input type="radio" name="gender" value="F"> F</label>
+            <br><br>
+            <label for="contactNumber">Contact NUmber:</label>
+            <input type="text" name="contactNumber" placeholder="">
+            <label for="birthDate">Birth Date:</label>
+            <input type="text" name="birthDate" placeholder="03/10/1998">
+            <label for="civilStatus">Civil Status</label>
+            <select name="civilStatus">
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+                <option>Acompannied</option>
+                <option>It's Complicated</option>
+            </select>
+            <label for="image">Image</label>
+            <input type="file" name="image">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea cols="256" rows="10" placeholder="Experience"></textarea>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Academic Training</legend>
+            <textarea cols="256" rows="10" placeholder="Academic Training"></textarea>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Further Training</legend>
+            <fieldset>
+                <legend>Programming Languages</legend>
+                <input type="checkbox" name="languages[]"> Java
+                <input type="checkbox" name="languages[]"> C#
+                <input type="checkbox" name="languages[]"> Python
+                <input type="checkbox" name="languages[]"> C++
+                <input type="checkbox" name="languages[]"> Ruby
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Web Technologies</legend>
+                <input type="checkbox" name="technologies[]"> HTML5
+                <input type="checkbox" name="technologies[]"> CSS/CSS3
+                <input type="checkbox" name="technologies[]"> Materialize CSS
+                <input type="checkbox" name="technologies[]"> Javascript
+                <input type="checkbox" name="technologies[]"> Node.js
+                <input type="checkbox" name="technologies[]"> Spring MVC
+            </fieldset>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        <a href="index.html"><input type="button" value="Cancel"></a>
+    </form>
+</body>
+</html>
